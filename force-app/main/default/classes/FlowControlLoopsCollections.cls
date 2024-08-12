@@ -150,7 +150,21 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
-        return null; // Replace null with the variable you used to store the result
+        String letterGrade;
+        Map<Integer, String> gradeMap = new Map<Integer, String>();
+        gradeMap.put(6, 'D');     //probably not the most efficient, but
+        gradeMap.put(7, 'C');     //following Warren's recommendation
+        gradeMap.put(8, 'B');     //to use Maps whenever possible early on to 
+        gradeMap.put(9, 'A');     //become proficient in them.
+        gradeMap.put(10, 'A');
+
+        if (score<60) {
+            return 'F';
+        } else {
+          Integer key = score/10;
+          return gradeMap.get(key);  
+        }
+       
     }
 
 
