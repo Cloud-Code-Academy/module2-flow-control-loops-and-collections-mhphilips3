@@ -210,18 +210,19 @@ public with sharing class FlowControlLoopsCollections {
      * @return The new string with the inputString repeated repeatCount times.
      */
     public static String repeatString(String inputString, Integer repeatCount) {
-        // Initialize the result String
+       String resultString = '';
+        
+        for (Integer i=0; i< repeatCount; i++) {
 
-        // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
-            // If it is not the last iteration, add a semicolon to separate the strings
+           if (i == repeatCount - 1) {                 //final pass, omit "; "
+            resultString = resultString + inputString;
+           } else {
+            resultString = resultString + inputString +'; ';
+           } 
+          
         }
-        */
-
-        // Return the final result string
-        return null; // Replace null with the variable you used to store the result
+       
+        return resultString; 
     }
 
     /**
