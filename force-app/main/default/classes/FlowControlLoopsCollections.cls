@@ -33,7 +33,7 @@ public with sharing class FlowControlLoopsCollections {
         if (x>y) {
             return 'Hello World!';
         } else {
-            return null;
+            return null; // tested all other x,y permutations in Apex Anonymous to verify 
         }
     }
 
@@ -47,7 +47,11 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-        return null; // Replace null with the variable you used to store the result
+        if (age>= 18) { //check if person is 18 or older, return true
+            return true;
+        } else {
+            return false; // or false
+        }       
     }
 
     /**
