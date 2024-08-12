@@ -66,8 +66,11 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
         Integer largestNum = null;
+        if (num1 != null && num2 != null) { // if both inputs are not null
+            largestNum = Math.max(num1,num2); // Math function that returns the largest among two inputs 
+        }
 
-        return null; // Replace null with the variable you used to store the result
+        return largestNum; 
     }
 
 
