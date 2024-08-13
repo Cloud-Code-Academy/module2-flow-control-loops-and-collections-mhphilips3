@@ -1,6 +1,9 @@
 Malcolm's comments:
 Resources used:
 Apex Developer's Guide to find Math.max function for Q3.
+Developer.Salesforce.com to remind about the .get or .put functionality
+Mostly referred to the notes I took from Camp Apex and the Video on CCA.
+Salesforce Stack Exchange to figure out how to iterate over a map for question 20.
 
 
 
