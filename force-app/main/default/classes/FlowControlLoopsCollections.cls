@@ -403,22 +403,22 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static List<String> getHighPaidEmployees() {
         // Initialize a Map
-        Map<String, Integer> employeeSalaries = new Map<String, Integer>();
-
-        // Add key-value pairs to the Map
-        // add John Doe => 50000
-        // add Jane Smith => 60000
-        // add Sam Brown => 55000
-        // add Alice Johnson => 65000
-
-        // Initialize a list to store the names of high paid employees
-
-        // Iterate over the Map using a for loop
-            // Check if the salary of the employee is more than 55000
-                // Add the employee to the list of high paid employees
-
-        // Return the list of high paid employees
-        return null; // Replace null with the variable you used to store the result
+        Map<String, Integer> employeeSalaryMap = new Map<String, Integer>();
+        //add key:value pairs to Map
+        employeeSalaryMap.put('John Doe', 50000);
+        employeeSalaryMap.put('Jane Smith', 60000);
+        employeeSalaryMap.put('Sam Brown', 55000);
+        employeeSalaryMap.put('Alice Johnson', 65000);
+        //Initialize List to hold names of highly paid employees
+        List<String> highPaidEmployees = new List<String>();
+        //Iterate through Map of employees:Salaries
+        for (String empl : employeeSalaryMap.keySet()){
+            if (employeeSalaryMap.get(empl) > 55000){     // when highly paid employee is found
+                highPaidEmployees.add(empl);              //Add employee to list
+            }
+        }
+      
+        return highPaidEmployees; 
     }
 
 }
