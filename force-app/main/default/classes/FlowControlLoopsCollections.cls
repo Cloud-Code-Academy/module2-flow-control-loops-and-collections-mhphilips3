@@ -280,12 +280,14 @@ public with sharing class FlowControlLoopsCollections {
      * @return A Set of unique strings.
      */
     public static Set<String> createStringSet(List<String> inputList) {
-        // Create a new Set of strings
+        
         Set<String> stringSet = new Set<String>();
 
-        //add strings to the set
+        for (String listItem : inputList){   // iterate through List inputList
+            stringSet.add(listItem);         // add each list item to set (dupes won't add to Set by design) 
+        }
 
-        return null; // Replace null with the variable you used to store the result
+        return stringSet; 
     }
 
     /**
