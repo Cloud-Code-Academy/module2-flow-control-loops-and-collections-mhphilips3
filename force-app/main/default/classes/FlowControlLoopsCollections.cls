@@ -161,10 +161,9 @@ public with sharing class FlowControlLoopsCollections {
         if (score<60) {
             return 'F';
         } else {
-          Integer key = score/10;
-          return gradeMap.get(key);  
-        }
-       
+            Integer key = score/10;
+        return gradeMap.get(key);  
+        }       
     }
 
 
