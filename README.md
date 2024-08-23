@@ -1,3 +1,14 @@
+Malcolm's comments:
+Resources used:
+Apex Developer's Guide to find Math.max function for Q3.
+Developer.Salesforce.com to remind about the .get or .put functionality
+Mostly referred to the notes I took from Camp Apex and the Video on CCA.
+Salesforce Stack Exchange to figure out how to iterate over a map for question 20.
+
+
+
+
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15533763&assignment_repo_type=AssignmentRepo)
 
 # Developer Kickstart Module 2: Flow Control, Loops, and Collections
 
